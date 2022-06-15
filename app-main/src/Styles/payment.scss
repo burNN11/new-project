@@ -1,0 +1,75 @@
+.payment_form {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  .box_card {
+    height: 150px;
+    width: 200px;
+    position: relative;
+
+    input[type='radio'] {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #2183a2;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      position: absolute;
+      box-shadow: 7px 7px 15px rgba(2, 28, 53, 0.08);
+      cursor: pointer;
+      outline: none;
+      &:before {
+        content: '';
+        position: absolute;
+        height: 22px;
+        width: 22px;
+        background-color: #f9fafd;
+        border: 1px solid #e2e6f3;
+        border-radius: 50%;
+        top: 35px;
+        right: 20px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        height: 13px;
+        width: 13px;
+        background-color: transparent;
+        border-radius: 50%;
+        top: 39.5px;
+        right: 24.5px;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+      &:checked {
+        border: 3px solid #478bfb;
+      }
+      &:checked:after {
+        background-color: #478bfb;
+      }
+    }
+    label {
+      position: absolute;
+      margin: 20px;
+      cursor: pointer;
+    }
+  }
+  button {
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    background: #27ae60;
+    color: #f2f2f2;
+    &:active {
+      transform: translateY(1.2px);
+    }
+  }
+}

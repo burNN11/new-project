@@ -1,0 +1,181 @@
+.Navbar {
+  background-color: #2183a2;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+}
+
+.Navbar .leftSide {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar .leftSide .links {
+  max-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Navbar .leftSide .links .navigation_drop {
+  color: aliceblue;
+  display: block;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.Navbar .leftSide .links .navigation_drop .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2183a2;
+  height: auto;
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+}
+
+.Navbar .leftSide .links .navigation_drop .submenu a {
+  margin: 0;
+}
+
+.Navbar .leftSide .links a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.Navbar .leftSide .links a span {
+  color: aliceblue;
+  vertical-align: super;
+  font-size: 15px;
+}
+
+.Navbar .leftSide .links .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Navbar .leftSide .links .userInfo:hover {
+  cursor: pointer;
+}
+
+.Navbar button {
+  display: none;
+  margin-left: 20px;
+}
+
+.Navbar #hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Navbar .rightSide {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .Navbar .leftSide .links a {
+    font-size: 20px;
+  }
+  .Navbar .leftSide .links .navigation_drop {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .Navbar .leftSide .links a {
+    font-size: 15px;
+  }
+  .Navbar .leftSide .links .navigation_drop {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .Navbar .leftSide button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Navbar .leftSide .links {
+    display: none;
+  }
+  .Navbar .leftSide #hidden {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    min-height: 230px;
+    width: 100%;
+    background-color: #2183a2;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+  }
+  .Navbar .leftSide #hidden a {
+    margin: 10px;
+    font-size: 25px;
+  }
+  .Navbar .leftSide .links .navigation_drop {
+    color: aliceblue;
+    font-size: 25px;
+  }
+  .Navbar .leftSide #hidden .navigation_drop .submenu {
+    position: absolute;
+    top: 200px;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,93 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 0;
+  .searchInputs {
+    display: flex;
+
+    input {
+      width: 250px;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .searchIcon {
+    height: 60px;
+    width: 50px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    border: none;
+    cursor: pointer;
+    svg {
+      font-size: 40px;
+      color: #2183a2;
+    }
+  }
+  .dataResult {
+    margin-top: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    &::-webkit-scrollbar {
+      box-shadow: inset 0 0 5px gray;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #2183a2;
+      border-radius: 10px;
+    }
+    .search-product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+      background-color: #2183a2;
+      width: 200px;
+      height: auto;
+      justify-content: center;
+      img {
+        height: 180px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+
+      h3 {
+        color: aliceblue;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      h1 {
+        color: aliceblue;
+        margin: 10px;
+        font-size: 15px;
+      }
+      button {
+        display: block;
+        color: #2183a2;
+        margin-bottom: 10px;
+        height: 25px;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        &:active {
+          transform: translateY(1.2px);
+        }
+      }
+    }
+  }
+}

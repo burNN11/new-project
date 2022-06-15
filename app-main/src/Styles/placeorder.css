@@ -1,0 +1,86 @@
+.placeorder_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 25px auto;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  width: 40%;
+}
+
+.placeorder_container h1 {
+  font-size: 25px;
+  color: #000;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.placeorder_container .placeorder_container_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.placeorder_container .placeorder_container_items h2 {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #000;
+}
+
+.placeorder_container .placeorder_container_items .order_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.placeorder_container .placeorder_container_items .order_items img {
+  height: 100px;
+  border-radius: 5px;
+}
+
+.placeorder_container .placeorder_container_items .order_items h3 {
+  margin-left: 5px;
+}
+
+.placeorder_container button {
+  margin-top: 10px;
+  background: #27ae60;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.placeorder_container button:active {
+  -webkit-transform: translateY(1.2px);
+          transform: translateY(1.2px);
+}
+/*# sourceMappingURL=placeorder.css.map */

@@ -1,0 +1,97 @@
+.payment_form {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  height: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.payment_form .box_card {
+  height: 150px;
+  width: 200px;
+  position: relative;
+}
+
+.payment_form .box_card input[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #2183a2;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  -webkit-box-shadow: 7px 7px 15px rgba(2, 28, 53, 0.08);
+          box-shadow: 7px 7px 15px rgba(2, 28, 53, 0.08);
+  cursor: pointer;
+  outline: none;
+}
+
+.payment_form .box_card input[type='radio']:before {
+  content: '';
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: #f9fafd;
+  border: 1px solid #e2e6f3;
+  border-radius: 50%;
+  top: 35px;
+  right: 20px;
+}
+
+.payment_form .box_card input[type='radio']:after {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background-color: transparent;
+  border-radius: 50%;
+  top: 39.5px;
+  right: 24.5px;
+}
+
+.payment_form .box_card input[type='radio']:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.payment_form .box_card input[type='radio']:checked {
+  border: 3px solid #478bfb;
+}
+
+.payment_form .box_card input[type='radio']:checked:after {
+  background-color: #478bfb;
+}
+
+.payment_form .box_card label {
+  position: absolute;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.payment_form button {
+  width: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 15px;
+  border: none;
+  background: #27ae60;
+  color: #f2f2f2;
+}
+
+.payment_form button:active {
+  -webkit-transform: translateY(1.2px);
+          transform: translateY(1.2px);
+}
+/*# sourceMappingURL=payment.css.map */
